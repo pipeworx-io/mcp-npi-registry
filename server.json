@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/npi-registry",
   "title": "Npi Registry",
   "description": "CMS NPI Registry MCP",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/npi-registry",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-npi-registry",

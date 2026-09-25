@@ -1,20 +1,32 @@
 {
   "name": "@pipeworx/mcp-npi-registry",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "CMS NPI Registry MCP",
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
+  "bin": {
+    "mcp-npi-registry": "bin/cli.js"
+  },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "npi-registry"],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pipeworx-io/mcp-npi-registry"
+    "url": "git+https://github.com/pipeworx-io/mcp-npi-registry.git"
   },
   "scripts": {
     "typecheck": "tsc --noEmit"
   },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
   "devDependencies": {
-    "typescript": "^5.7.0"
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-6b4b4e3a421f25da09605b00f821aa39dd8029da85dc8a1ebb4e932b6cd525fb",
+    "sourceCommit": "adb69d997f82a62e8e22b594488c7d04a227db35"
   }
 }
