@@ -1,0 +1,79 @@
+[
+  {
+    "name": "search",
+    "description": "Search providers by any combination of fields. NPI Registry requires at least one filter — supply at least name/organization/taxonomy/postal_code/state.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "number": {
+          "type": "string",
+          "description": "10-digit NPI"
+        },
+        "name": {
+          "type": "string",
+          "description": "Full provider name (use along with type)"
+        },
+        "first_name": {
+          "type": "string"
+        },
+        "last_name": {
+          "type": "string"
+        },
+        "organization_name": {
+          "type": "string"
+        },
+        "taxonomy": {
+          "type": "string",
+          "description": "Taxonomy code or description (e.g. \"Internal Medicine\")"
+        },
+        "city": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string",
+          "description": "Two-letter state code"
+        },
+        "postal_code": {
+          "type": "string",
+          "description": "5-digit ZIP (or first 3 with wildcard \"*\")"
+        },
+        "country_code": {
+          "type": "string",
+          "description": "US (default) | other ISO country"
+        },
+        "npi_type": {
+          "type": "string",
+          "description": "NPI-1 (individual) | NPI-2 (organization)"
+        },
+        "address_purpose": {
+          "type": "string",
+          "description": "LOCATION (default) | MAILING | PRIMARY | SECONDARY"
+        },
+        "limit": {
+          "type": "number",
+          "description": "1-200 (default 10)"
+        },
+        "skip": {
+          "type": "number",
+          "description": "0-based offset (max 1000)"
+        }
+      }
+    }
+  },
+  {
+    "name": "get_provider",
+    "description": "Fetch a provider by 10-digit NPI.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "npi": {
+          "type": "string",
+          "description": "10-digit NPI"
+        }
+      },
+      "required": [
+        "npi"
+      ]
+    }
+  }
+]
