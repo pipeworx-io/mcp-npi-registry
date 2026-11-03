@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-npi-registry",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "CMS NPI Registry MCP",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "npi-registry",
     "gatewaySlug": "npi-registry",
-    "sourceHash": "v1-29fc577f4a7fa9146103d634adf054e441f83c7ced1a30115ad94db87a927850",
-    "sourceCommit": "b2c4383545bb35171d0ada2beb1c9c7168ea175e"
+    "sourceHash": "v1-72593acc36685158c75ae641d26fe1e6c38371ebb9854d2301d4e8d4aaa08a68",
+    "sourceCommit": "bed7faa04e7276899b5e3870ef11c98625371f2b"
   }
 }
